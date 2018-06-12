@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B872256720CF685A00D1816D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872256620CF685A00D1816D /* AppDelegate.swift */; };
-		B872256920CF685A00D1816D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872256820CF685A00D1816D /* ViewController.swift */; };
 		B872256C20CF685A00D1816D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B872256A20CF685A00D1816D /* Main.storyboard */; };
 		B872256E20CF685A00D1816D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B872256D20CF685A00D1816D /* Assets.xcassets */; };
 		B872257120CF685A00D1816D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B872256F20CF685A00D1816D /* LaunchScreen.storyboard */; };
+		B8777D4020CFF07E00D2DEFA /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */; };
+		B8777D4220CFFB6C00D2DEFA /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D4120CFFB6C00D2DEFA /* ListTVC.swift */; };
+		B8777D4420D000CD00D2DEFA /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D4320D000CD00D2DEFA /* CoffeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B872256320CF685A00D1816D /* BlackCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B872256620CF685A00D1816D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B872256820CF685A00D1816D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B872256B20CF685A00D1816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B872256D20CF685A00D1816D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B872257020CF685A00D1816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B872257220CF685A00D1816D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B872257820CF689100D1816D /* BlackCoffee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlackCoffee.entitlements; sourceTree = "<group>"; };
+		B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		B8777D4120CFFB6C00D2DEFA /* ListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
+		B8777D4320D000CD00D2DEFA /* CoffeeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +59,11 @@
 		B872256520CF685A00D1816D /* BlackCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				B872257820CF689100D1816D /* BlackCoffee.entitlements */,
 				B872256620CF685A00D1816D /* AppDelegate.swift */,
-				B872256820CF685A00D1816D /* ViewController.swift */,
+				B8777D4320D000CD00D2DEFA /* CoffeeModel.swift */,
+				B8777D4120CFFB6C00D2DEFA /* ListTVC.swift */,
+				B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */,
 				B872256A20CF685A00D1816D /* Main.storyboard */,
 				B872256D20CF685A00D1816D /* Assets.xcassets */,
 				B872256F20CF685A00D1816D /* LaunchScreen.storyboard */,
@@ -96,6 +104,11 @@
 				TargetAttributes = {
 					B872256220CF685A00D1816D = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B872256920CF685A00D1816D /* ViewController.swift in Sources */,
 				B872256720CF685A00D1816D /* AppDelegate.swift in Sources */,
+				B8777D4420D000CD00D2DEFA /* CoffeeModel.swift in Sources */,
+				B8777D4220CFFB6C00D2DEFA /* ListTVC.swift in Sources */,
+				B8777D4020CFF07E00D2DEFA /* OrderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +295,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlackCoffee/BlackCoffee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP8Z378EKD;
 				INFOPLIST_FILE = BlackCoffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlackCoffee/BlackCoffee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP8Z378EKD;
 				INFOPLIST_FILE = BlackCoffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
