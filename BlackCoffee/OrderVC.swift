@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 class OrderVC: UIViewController {
     
@@ -16,21 +17,25 @@ class OrderVC: UIViewController {
     var productName = ""
     var productPrice: Int = 0
     var productIndex = 0
+    var productSelected: ProductModel?
+    var productOrdered: OrderModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidLayoutSubviews() {
-        name.text = productName
-        price.text = String(productPrice)
-        
+        if let productSelected = productSelected {
+            name.text = productSelected.name
+            price.text = String(productSelected.price)
+        }
     }
     
-    
-    
     @IBAction func orderButtonTapped(_ sender: Any) {
-        generateUserActivity()
+        if let productSelected = productSelected {
+            productOrdered = OrderModel(name: productSelected.name, price: productSelected.price, quantity: 1)
+            performSegue(withIdentifier: "toOrderHistory", sender: self)
+        }
     }
     
     func generateUserActivity() {
@@ -41,6 +46,17 @@ class OrderVC: UIViewController {
         activity.isEligibleForHandoff = true
         activity.title = productName
         userActivity = activity
+    }
+    
+    func donateIntent() {
+        let intent = OrderCoffeeIntent()
+        intent.name = productName
+        let interaction = INInteraction(intent: intent, response: nil)
+        interaction.donate { (error) in
+            if let error = error {
+                print("Error donating intent: \(error)")
+            }
+        }
     }
 }
 

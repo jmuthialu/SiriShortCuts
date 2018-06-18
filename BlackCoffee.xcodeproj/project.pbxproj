@@ -7,16 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B866876F20D7476F00F0B933 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866876E20D7476F00F0B933 /* OrderModel.swift */; };
+		B866877120D749BF00F0B933 /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866877020D749BF00F0B933 /* ProductTVC.swift */; };
 		B872256720CF685A00D1816D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872256620CF685A00D1816D /* AppDelegate.swift */; };
 		B872256C20CF685A00D1816D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B872256A20CF685A00D1816D /* Main.storyboard */; };
 		B872256E20CF685A00D1816D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B872256D20CF685A00D1816D /* Assets.xcassets */; };
 		B872257120CF685A00D1816D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B872256F20CF685A00D1816D /* LaunchScreen.storyboard */; };
+		B8769F7920D07B14003FC811 /* OrderCoffee.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */; };
 		B8777D4020CFF07E00D2DEFA /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */; };
-		B8777D4220CFFB6C00D2DEFA /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D4120CFFB6C00D2DEFA /* ListTVC.swift */; };
-		B8777D4420D000CD00D2DEFA /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D4320D000CD00D2DEFA /* CoffeeModel.swift */; };
+		B8777D4220CFFB6C00D2DEFA /* OrderHistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D4120CFFB6C00D2DEFA /* OrderHistoryTVC.swift */; };
+		B8777D4420D000CD00D2DEFA /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8777D4320D000CD00D2DEFA /* ProductModel.swift */; };
+		B8A166BF20D0ACFD00C6A814 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A166BE20D0ACFD00C6A814 /* IntentHandler.swift */; };
+		B8A166C320D0ACFD00C6A814 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8A166BC20D0ACFD00C6A814 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8B7BBEF20D0B0DA002E3072 /* OrderCoffee.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */; };
+		B8B7BBF120D0B2DB002E3072 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = B8B7BBF020D0B2DA002E3072 /* readme */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B8A166C120D0ACFD00C6A814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B872255B20CF685A00D1816D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A166BB20D0ACFD00C6A814;
+			remoteInfo = IntentHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8A166C720D0ACFD00C6A814 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8A166C320D0ACFD00C6A814 /* IntentHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B866876E20D7476F00F0B933 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		B866877020D749BF00F0B933 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
 		B872256320CF685A00D1816D /* BlackCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B872256620CF685A00D1816D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B872256B20CF685A00D1816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,13 +57,25 @@
 		B872257020CF685A00D1816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B872257220CF685A00D1816D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B872257820CF689100D1816D /* BlackCoffee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlackCoffee.entitlements; sourceTree = "<group>"; };
+		B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OrderCoffee.intentdefinition; sourceTree = "<group>"; };
 		B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
-		B8777D4120CFFB6C00D2DEFA /* ListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
-		B8777D4320D000CD00D2DEFA /* CoffeeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
+		B8777D4120CFFB6C00D2DEFA /* OrderHistoryTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryTVC.swift; sourceTree = "<group>"; };
+		B8777D4320D000CD00D2DEFA /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		B8A166BC20D0ACFD00C6A814 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A166BE20D0ACFD00C6A814 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		B8A166C020D0ACFD00C6A814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B7BBF020D0B2DA002E3072 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B872256020CF685A00D1816D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A166B920D0ACFD00C6A814 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,7 +88,9 @@
 		B872255A20CF685A00D1816D = {
 			isa = PBXGroup;
 			children = (
+				B8B7BBF020D0B2DA002E3072 /* readme */,
 				B872256520CF685A00D1816D /* BlackCoffee */,
+				B8A166BD20D0ACFD00C6A814 /* IntentHandler */,
 				B872256420CF685A00D1816D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B872256320CF685A00D1816D /* BlackCoffee.app */,
+				B8A166BC20D0ACFD00C6A814 /* IntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,15 +109,27 @@
 			children = (
 				B872257820CF689100D1816D /* BlackCoffee.entitlements */,
 				B872256620CF685A00D1816D /* AppDelegate.swift */,
-				B8777D4320D000CD00D2DEFA /* CoffeeModel.swift */,
-				B8777D4120CFFB6C00D2DEFA /* ListTVC.swift */,
+				B8777D4320D000CD00D2DEFA /* ProductModel.swift */,
+				B866877020D749BF00F0B933 /* ProductTVC.swift */,
+				B866876E20D7476F00F0B933 /* OrderModel.swift */,
+				B8777D4120CFFB6C00D2DEFA /* OrderHistoryTVC.swift */,
 				B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */,
+				B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */,
 				B872256A20CF685A00D1816D /* Main.storyboard */,
 				B872256D20CF685A00D1816D /* Assets.xcassets */,
 				B872256F20CF685A00D1816D /* LaunchScreen.storyboard */,
 				B872257220CF685A00D1816D /* Info.plist */,
 			);
 			path = BlackCoffee;
+			sourceTree = "<group>";
+		};
+		B8A166BD20D0ACFD00C6A814 /* IntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B8A166BE20D0ACFD00C6A814 /* IntentHandler.swift */,
+				B8A166C020D0ACFD00C6A814 /* Info.plist */,
+			);
+			path = IntentHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,15 +142,34 @@
 				B872255F20CF685A00D1816D /* Sources */,
 				B872256020CF685A00D1816D /* Frameworks */,
 				B872256120CF685A00D1816D /* Resources */,
+				B8A166C720D0ACFD00C6A814 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8A166C220D0ACFD00C6A814 /* PBXTargetDependency */,
 			);
 			name = BlackCoffee;
 			productName = BlackCoffee;
 			productReference = B872256320CF685A00D1816D /* BlackCoffee.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B8A166BB20D0ACFD00C6A814 /* IntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A166C620D0ACFD00C6A814 /* Build configuration list for PBXNativeTarget "IntentHandler" */;
+			buildPhases = (
+				B8A166B820D0ACFD00C6A814 /* Sources */,
+				B8A166B920D0ACFD00C6A814 /* Frameworks */,
+				B8A166BA20D0ACFD00C6A814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandler;
+			productName = IntentHandler;
+			productReference = B8A166BC20D0ACFD00C6A814 /* IntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +189,9 @@
 							};
 						};
 					};
+					B8A166BB20D0ACFD00C6A814 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = B872255E20CF685A00D1816D /* Build configuration list for PBXProject "BlackCoffee" */;
@@ -126,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				B872256220CF685A00D1816D /* BlackCoffee */,
+				B8A166BB20D0ACFD00C6A814 /* IntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -135,9 +218,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B7BBF120D0B2DB002E3072 /* readme in Resources */,
 				B872257120CF685A00D1816D /* LaunchScreen.storyboard in Resources */,
 				B872256E20CF685A00D1816D /* Assets.xcassets in Resources */,
 				B872256C20CF685A00D1816D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A166BA20D0ACFD00C6A814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,13 +240,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B872256720CF685A00D1816D /* AppDelegate.swift in Sources */,
-				B8777D4420D000CD00D2DEFA /* CoffeeModel.swift in Sources */,
-				B8777D4220CFFB6C00D2DEFA /* ListTVC.swift in Sources */,
+				B8769F7920D07B14003FC811 /* OrderCoffee.intentdefinition in Sources */,
+				B8777D4420D000CD00D2DEFA /* ProductModel.swift in Sources */,
+				B8777D4220CFFB6C00D2DEFA /* OrderHistoryTVC.swift in Sources */,
+				B866876F20D7476F00F0B933 /* OrderModel.swift in Sources */,
 				B8777D4020CFF07E00D2DEFA /* OrderVC.swift in Sources */,
+				B866877120D749BF00F0B933 /* ProductTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A166B820D0ACFD00C6A814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A166BF20D0ACFD00C6A814 /* IntentHandler.swift in Sources */,
+				B8B7BBEF20D0B0DA002E3072 /* OrderCoffee.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8A166C220D0ACFD00C6A814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A166BB20D0ACFD00C6A814 /* IntentHandler */;
+			targetProxy = B8A166C120D0ACFD00C6A814 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B872256A20CF685A00D1816D /* Main.storyboard */ = {
@@ -294,6 +405,7 @@
 		B872257620CF685A00D1816D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlackCoffee/BlackCoffee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +425,7 @@
 		B872257720CF685A00D1816D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlackCoffee/BlackCoffee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +437,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.glintpod.BlackCoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8A166C420D0ACFD00C6A814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP8Z378EKD;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glintpod.BlackCoffee.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8A166C520D0ACFD00C6A814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP8Z378EKD;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glintpod.BlackCoffee.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,6 +497,15 @@
 			buildConfigurations = (
 				B872257620CF685A00D1816D /* Debug */,
 				B872257720CF685A00D1816D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A166C620D0ACFD00C6A814 /* Build configuration list for PBXNativeTarget "IntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A166C420D0ACFD00C6A814 /* Debug */,
+				B8A166C520D0ACFD00C6A814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
