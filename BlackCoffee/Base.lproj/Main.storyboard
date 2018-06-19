@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6cF-6U-zud" kind="show" identifier="orderViewSegue" id="5V8-sR-kfL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -58,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peQ-ku-M6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="-507"/>
+            <point key="canvasLocation" x="278" y="-508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fgm-jJ-9bZ">
@@ -166,12 +169,13 @@
                     <connections>
                         <outlet property="name" destination="tyx-4E-L64" id="KlW-uV-VcC"/>
                         <outlet property="price" destination="kLM-8N-rjh" id="coG-kf-oti"/>
+                        <outlet property="quantityTextField" destination="VYj-MH-ZdB" id="dwR-Gh-Ks1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUz-rf-pp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="YpC-Hp-leC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="394"/>
+            <point key="canvasLocation" x="1302" y="396"/>
         </scene>
         <!--ProductTVC-->
         <scene sceneID="kMd-Oq-hid">
@@ -202,7 +206,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVl-hD-cgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-764"/>
+            <point key="canvasLocation" x="1302" y="-745"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5V8-sR-kfL"/>
+    </inferredMetricsTieBreakers>
 </document>

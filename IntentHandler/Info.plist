@@ -26,8 +26,11 @@
 		<dict>
 			<key>IntentsRestrictedWhileLocked</key>
 			<array/>
+			<key>IntentsRestrictedWhileProtectedDataUnavailable</key>
+			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>OrderCoffeeIntent</string>
 				<string>OrderCoffeeIntentHandling</string>
 			</array>
 		</dict>

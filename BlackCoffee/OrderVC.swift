@@ -13,6 +13,7 @@ class OrderVC: UIViewController {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var quantityTextField: UITextField!
     
     var productName = ""
     var productPrice: Int = 0
@@ -28,6 +29,10 @@ class OrderVC: UIViewController {
         if let productSelected = productSelected {
             name.text = productSelected.name
             price.text = String(productSelected.price)
+        } else if let productOrdered = productOrdered {
+            name.text = productOrdered.name
+            price.text = String(productOrdered.price)
+            quantityTextField.text = String(productOrdered.quantity)
         }
     }
     
@@ -38,26 +43,6 @@ class OrderVC: UIViewController {
         }
     }
     
-    func generateUserActivity() {
-        let activity = NSUserActivity(activityType: "com.glintpod.order")
-        activity.delegate = self
-        activity.isEligibleForSearch = true
-        activity.isEligibleForPrediction = true
-        activity.isEligibleForHandoff = true
-        activity.title = productName
-        userActivity = activity
-    }
-    
-    func donateIntent() {
-        let intent = OrderCoffeeIntent()
-        intent.name = productName
-        let interaction = INInteraction(intent: intent, response: nil)
-        interaction.donate { (error) in
-            if let error = error {
-                print("Error donating intent: \(error)")
-            }
-        }
-    }
 }
 
 extension OrderVC: NSUserActivityDelegate {
