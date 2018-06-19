@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="IntentHandlerUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="confirmationView" destination="34X-o4-XQK" id="QYP-dL-SFZ"/>
+                        <outlet property="finalizeView" destination="T1p-b5-N1t" id="Uo0-ag-uqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="34X-o4-XQK" customClass="ConfirmationView" customModule="IntentHandlerUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProductName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-my-lSc">
+                            <rect key="frame" x="20" y="20" width="106" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz0-A3-AmP">
+                            <rect key="frame" x="20" y="56" width="65" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Amb-my-lSc" firstAttribute="top" secondItem="dQa-Q6-0vC" secondAttribute="top" constant="20" id="7FV-9t-yyF"/>
+                        <constraint firstItem="Lz0-A3-AmP" firstAttribute="top" secondItem="Amb-my-lSc" secondAttribute="bottom" constant="15" id="HyX-La-S4F"/>
+                        <constraint firstItem="Amb-my-lSc" firstAttribute="leading" secondItem="dQa-Q6-0vC" secondAttribute="leading" constant="20" id="SIf-iH-g3q"/>
+                        <constraint firstItem="Lz0-A3-AmP" firstAttribute="leading" secondItem="dQa-Q6-0vC" secondAttribute="leading" constant="20" id="zom-ij-Xmv"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="dQa-Q6-0vC"/>
+                    <connections>
+                        <outlet property="productName" destination="Amb-my-lSc" id="hD4-tp-zgu"/>
+                        <outlet property="quantity" destination="Lz0-A3-AmP" id="gDh-SW-C5C"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="T1p-b5-N1t" customClass="FinalizeView" customModule="IntentHandlerUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlL-CB-Jwq">
+                            <rect key="frame" x="100.5" y="53.5" width="39" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FlL-CB-Jwq" firstAttribute="centerY" secondItem="T1p-b5-N1t" secondAttribute="centerY" id="OBy-uS-FcD"/>
+                        <constraint firstItem="FlL-CB-Jwq" firstAttribute="centerX" secondItem="T1p-b5-N1t" secondAttribute="centerX" id="sHq-GR-yBu"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="LSz-q9-KJk"/>
+                    <connections>
+                        <outlet property="price" destination="FlL-CB-Jwq" id="ex1-JH-80h"/>
+                    </connections>
+                </view>
+            </objects>
+        </scene>
+    </scenes>
+</document>

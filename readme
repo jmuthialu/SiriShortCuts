@@ -17,3 +17,8 @@ App development
 - Add this target to OrderCoffee.intentdefinition file so that IntentHandler can compile OrderCoffeeIntentHandling
 - Add Intent handler for OrderCoffeeIntentHandling
 - Add custom intent in info.plist of intentHandler (IntentsSupported: OrderCoffeeIntentHandling)
+
+
+- Add IntentHandlerUI target
+- Add custom intent in info.plist of intentHandlerUI (IntentsSupported: OrderCoffeeIntentHandling)
+

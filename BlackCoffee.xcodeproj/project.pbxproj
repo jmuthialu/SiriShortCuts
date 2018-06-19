@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B848F8BE20D9275100BEBC53 /* OrderCoffee.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */; };
+		B848F8C020D92C2300BEBC53 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848F8BF20D92C2300BEBC53 /* ConfirmationView.swift */; };
+		B848F8C220D92C3E00BEBC53 /* FinalizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848F8C120D92C3E00BEBC53 /* FinalizeView.swift */; };
 		B866877120D749BF00F0B933 /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866877020D749BF00F0B933 /* ProductTVC.swift */; };
 		B872256720CF685A00D1816D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872256620CF685A00D1816D /* AppDelegate.swift */; };
 		B872256C20CF685A00D1816D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B872256A20CF685A00D1816D /* Main.storyboard */; };
@@ -22,6 +25,10 @@
 		B8B7BBF120D0B2DB002E3072 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = B8B7BBF020D0B2DA002E3072 /* readme */; };
 		B8CCB41620D8628800E9B603 /* OrderHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */; };
 		B8CCB41820D8878500E9B603 /* OrderHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */; };
+		B8DFA7BF20D8998C002A71BE /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DFA7BE20D8998C002A71BE /* IntentsUI.framework */; };
+		B8DFA7C220D8998C002A71BE /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DFA7C120D8998C002A71BE /* IntentViewController.swift */; };
+		B8DFA7C520D8998C002A71BE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DFA7C320D8998C002A71BE /* MainInterface.storyboard */; };
+		B8DFA7C920D8998C002A71BE /* IntentHandlerUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8DFA7BC20D8998C002A71BE /* IntentHandlerUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B8A166BB20D0ACFD00C6A814;
 			remoteInfo = IntentHandler;
+		};
+		B8DFA7C720D8998C002A71BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B872255B20CF685A00D1816D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8DFA7BB20D8998C002A71BE;
+			remoteInfo = IntentHandlerUI;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,6 +56,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				B8A166C320D0ACFD00C6A814 /* IntentHandler.appex in Embed App Extensions */,
+				B8DFA7C920D8998C002A71BE /* IntentHandlerUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B848F8BF20D92C2300BEBC53 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		B848F8C120D92C3E00BEBC53 /* FinalizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizeView.swift; sourceTree = "<group>"; };
 		B866877020D749BF00F0B933 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
 		B872256320CF685A00D1816D /* BlackCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B872256620CF685A00D1816D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +83,11 @@
 		B8A166C020D0ACFD00C6A814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B7BBF020D0B2DA002E3072 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryModel.swift; sourceTree = "<group>"; };
+		B8DFA7BC20D8998C002A71BE /* IntentHandlerUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandlerUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DFA7BE20D8998C002A71BE /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		B8DFA7C120D8998C002A71BE /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		B8DFA7C420D8998C002A71BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B8DFA7C620D8998C002A71BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8DFA7B920D8998C002A71BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DFA7BF20D8998C002A71BE /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +122,8 @@
 				B8B7BBF020D0B2DA002E3072 /* readme */,
 				B872256520CF685A00D1816D /* BlackCoffee */,
 				B8A166BD20D0ACFD00C6A814 /* IntentHandler */,
+				B8DFA7C020D8998C002A71BE /* IntentHandlerUI */,
+				B8DFA7BD20D8998C002A71BE /* Frameworks */,
 				B872256420CF685A00D1816D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +133,7 @@
 			children = (
 				B872256320CF685A00D1816D /* BlackCoffee.app */,
 				B8A166BC20D0ACFD00C6A814 /* IntentHandler.appex */,
+				B8DFA7BC20D8998C002A71BE /* IntentHandlerUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +166,26 @@
 			path = IntentHandler;
 			sourceTree = "<group>";
 		};
+		B8DFA7BD20D8998C002A71BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8DFA7BE20D8998C002A71BE /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8DFA7C020D8998C002A71BE /* IntentHandlerUI */ = {
+			isa = PBXGroup;
+			children = (
+				B8DFA7C320D8998C002A71BE /* MainInterface.storyboard */,
+				B8DFA7C120D8998C002A71BE /* IntentViewController.swift */,
+				B8DFA7C620D8998C002A71BE /* Info.plist */,
+				B848F8BF20D92C2300BEBC53 /* ConfirmationView.swift */,
+				B848F8C120D92C3E00BEBC53 /* FinalizeView.swift */,
+			);
+			path = IntentHandlerUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +202,7 @@
 			);
 			dependencies = (
 				B8A166C220D0ACFD00C6A814 /* PBXTargetDependency */,
+				B8DFA7C820D8998C002A71BE /* PBXTargetDependency */,
 			);
 			name = BlackCoffee;
 			productName = BlackCoffee;
@@ -172,6 +226,23 @@
 			productReference = B8A166BC20D0ACFD00C6A814 /* IntentHandler.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		B8DFA7BB20D8998C002A71BE /* IntentHandlerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DFA7CC20D8998C002A71BE /* Build configuration list for PBXNativeTarget "IntentHandlerUI" */;
+			buildPhases = (
+				B8DFA7B820D8998C002A71BE /* Sources */,
+				B8DFA7B920D8998C002A71BE /* Frameworks */,
+				B8DFA7BA20D8998C002A71BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandlerUI;
+			productName = IntentHandlerUI;
+			productReference = B8DFA7BC20D8998C002A71BE /* IntentHandlerUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +264,9 @@
 					B8A166BB20D0ACFD00C6A814 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					B8DFA7BB20D8998C002A71BE = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = B872255E20CF685A00D1816D /* Build configuration list for PBXProject "BlackCoffee" */;
@@ -210,6 +284,7 @@
 			targets = (
 				B872256220CF685A00D1816D /* BlackCoffee */,
 				B8A166BB20D0ACFD00C6A814 /* IntentHandler */,
+				B8DFA7BB20D8998C002A71BE /* IntentHandlerUI */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +305,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DFA7BA20D8998C002A71BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DFA7C520D8998C002A71BE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +343,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8DFA7B820D8998C002A71BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DFA7C220D8998C002A71BE /* IntentViewController.swift in Sources */,
+				B848F8C020D92C2300BEBC53 /* ConfirmationView.swift in Sources */,
+				B848F8C220D92C3E00BEBC53 /* FinalizeView.swift in Sources */,
+				B848F8BE20D9275100BEBC53 /* OrderCoffee.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -267,6 +361,11 @@
 			isa = PBXTargetDependency;
 			target = B8A166BB20D0ACFD00C6A814 /* IntentHandler */;
 			targetProxy = B8A166C120D0ACFD00C6A814 /* PBXContainerItemProxy */;
+		};
+		B8DFA7C820D8998C002A71BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8DFA7BB20D8998C002A71BE /* IntentHandlerUI */;
+			targetProxy = B8DFA7C720D8998C002A71BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -285,6 +384,14 @@
 				B872257020CF685A00D1816D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8DFA7C320D8998C002A71BE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8DFA7C420D8998C002A71BE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,6 +589,44 @@
 			};
 			name = Release;
 		};
+		B8DFA7CA20D8998C002A71BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP8Z378EKD;
+				INFOPLIST_FILE = IntentHandlerUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glintpod.BlackCoffee.IntentHandlerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8DFA7CB20D8998C002A71BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP8Z378EKD;
+				INFOPLIST_FILE = IntentHandlerUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glintpod.BlackCoffee.IntentHandlerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +653,15 @@
 			buildConfigurations = (
 				B8A166C420D0ACFD00C6A814 /* Debug */,
 				B8A166C520D0ACFD00C6A814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DFA7CC20D8998C002A71BE /* Build configuration list for PBXNativeTarget "IntentHandlerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DFA7CA20D8998C002A71BE /* Debug */,
+				B8DFA7CB20D8998C002A71BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
