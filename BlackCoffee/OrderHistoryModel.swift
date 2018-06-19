@@ -39,10 +39,13 @@ class OrderHistoryModel {
     
     func addOrder(fromIntent intent: OrderCoffeeIntent) {
         guard let productName = intent.productName else { return }
+        guard let qtyNumber = intent.quantity else { return }
         guard let index = getFirstIndex(byProductName: productName) else { return }
         guard let order = getOrderBy(index: index) else { return }
         
-        orderHistory.append(order)
+        let qtyInt = Int(truncating: qtyNumber)
+        let newOrder = OrderModel(name: productName, price: order.price, quantity: qtyInt)
+        orderHistory.append(newOrder)
     }
     
     func getFirstIndex(byProductName productName: String) -> Int? {
@@ -57,6 +60,7 @@ class OrderHistoryModel {
         guard let orderPlaced = orderPlaced else { return }
         let intent = OrderCoffeeIntent()
         intent.productName = orderPlaced.name
+        intent.quantity = orderPlaced.quantity as NSNumber
         let interaction = INInteraction(intent: intent, response: nil)
         interaction.donate { (error) in
             if let error = error {

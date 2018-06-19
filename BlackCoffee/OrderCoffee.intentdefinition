@@ -22,7 +22,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>gGxx5e</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>1</integer>
+			<integer>3</integer>
 			<key>INIntentName</key>
 			<string>OrderCoffee</string>
 			<key>INIntentParameterCombinations</key>
@@ -32,7 +32,7 @@
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
 					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
+					<string>Time to have fun!</string>
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>tGEuHk</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
@@ -41,6 +41,21 @@
 					<string>Order ${productName}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>YMYe62</string>
+				</dict>
+				<key>productName,quantity</key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<false/>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Time to have fun!</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>0tYmjf</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Order  ${quantity} qty of ${productName}</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>22gJQW</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -56,6 +71,18 @@
 					<integer>1</integer>
 					<key>INIntentParameterType</key>
 					<string>String</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>2</integer>
+					<key>INIntentParameterName</key>
+					<string>quantity</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>3</integer>
+					<key>INIntentParameterType</key>
+					<string>Integer</string>
 				</dict>
 			</array>
 			<key>INIntentResponse</key>
