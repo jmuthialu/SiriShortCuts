@@ -19,10 +19,10 @@ class ProductTVC: UITableViewController {
     
     func buildProductModel() {
         if products.count == 0 {
-            let cappaccino = ProductModel(name: "Cappaccino", price: 10)
+            let cappuccino = ProductModel(name: "Cappuccino", price: 10)
             let expresso = ProductModel(name: "Espresso", price: 5)
             let blackTea = ProductModel(name: "Tea", price: 5)
-            products.append(cappaccino)
+            products.append(cappuccino)
             products.append(expresso)
             products.append(blackTea)
         }

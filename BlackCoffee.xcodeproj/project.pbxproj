@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80B671E20D9AFFF0007A63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B872256D20CF685A00D1816D /* Assets.xcassets */; };
+		B80B671F20D9B0000007A63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B872256D20CF685A00D1816D /* Assets.xcassets */; };
+		B80B672120D9E4830007A63A /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80B672020D9E4830007A63A /* OrderHistoryCell.swift */; };
+		B80B672220D9E48C0007A63A /* OrderHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */; };
 		B848F8BE20D9275100BEBC53 /* OrderCoffee.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */; };
 		B848F8C020D92C2300BEBC53 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848F8BF20D92C2300BEBC53 /* ConfirmationView.swift */; };
 		B848F8C220D92C3E00BEBC53 /* FinalizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848F8C120D92C3E00BEBC53 /* FinalizeView.swift */; };
@@ -64,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B80B672020D9E4830007A63A /* OrderHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryCell.swift; sourceTree = "<group>"; };
 		B848F8BF20D92C2300BEBC53 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		B848F8C120D92C3E00BEBC53 /* FinalizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizeView.swift; sourceTree = "<group>"; };
 		B866877020D749BF00F0B933 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 				B866877020D749BF00F0B933 /* ProductTVC.swift */,
 				B8777D4120CFFB6C00D2DEFA /* OrderHistoryTVC.swift */,
 				B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */,
+				B80B672020D9E4830007A63A /* OrderHistoryCell.swift */,
 				B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */,
 				B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */,
 				B872256A20CF685A00D1816D /* Main.storyboard */,
@@ -305,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80B671E20D9AFFF0007A63A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80B671F20D9B0000007A63A /* Assets.xcassets in Resources */,
 				B8DFA7C520D8998C002A71BE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +338,7 @@
 				B8777D4220CFFB6C00D2DEFA /* OrderHistoryTVC.swift in Sources */,
 				B8777D4020CFF07E00D2DEFA /* OrderVC.swift in Sources */,
 				B866877120D749BF00F0B933 /* ProductTVC.swift in Sources */,
+				B80B672120D9E4830007A63A /* OrderHistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +359,7 @@
 				B8DFA7C220D8998C002A71BE /* IntentViewController.swift in Sources */,
 				B848F8C020D92C2300BEBC53 /* ConfirmationView.swift in Sources */,
 				B848F8C220D92C3E00BEBC53 /* FinalizeView.swift in Sources */,
+				B80B672220D9E48C0007A63A /* OrderHistoryModel.swift in Sources */,
 				B848F8BE20D9275100BEBC53 /* OrderCoffee.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

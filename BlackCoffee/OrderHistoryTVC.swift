@@ -67,14 +67,15 @@ class OrderHistoryTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "masterCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "OrderHistoryCell", for: indexPath) as? OrderHistoryCell
+            else { return UITableViewCell() }
 
         if let productName = viewModel.getOrderBy(index: indexPath.row)?.name {
-            cell.textLabel?.text = productName
+            cell.productName.text = productName
+            cell.productImage?.image = UIImage(named: productName)
         }
-        
         if let productPrice = viewModel.getOrderBy(index: indexPath.row)?.price {
-            cell.detailTextLabel?.text = String(productPrice)
+            cell.price.text = "$" + String(productPrice)
         }
         return cell
     }
