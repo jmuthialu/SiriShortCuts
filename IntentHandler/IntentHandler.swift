@@ -8,7 +8,8 @@
 
 import Intents
 
-class IntentHandler: INExtension, OrderCoffeeIntentHandling {
+class IntentHandler: INExtension, OrderCoffeeIntentHandling
+{
     
     func confirm(intent: OrderCoffeeIntent, completion: @escaping (OrderCoffeeIntentResponse) -> Void) {
         completion(OrderCoffeeIntentResponse(code: .ready, userActivity: nil))
@@ -16,8 +17,10 @@ class IntentHandler: INExtension, OrderCoffeeIntentHandling {
     
     func handle(intent: OrderCoffeeIntent, completion: @escaping (OrderCoffeeIntentResponse) -> Void) {
         let orderModel = OrderHistoryModel()
-        orderModel.addOrder(fromIntent: intent)
-        return completion(OrderCoffeeIntentResponse(code: .success, userActivity: nil))
+        if let productName = intent.productName {
+            orderModel.addOrder(fromIntent: intent)
+            completion(OrderCoffeeIntentResponse.success(productName: productName, waitTime: "10"))
+        }
     }
     
     override func handler(for intent: INIntent) -> Any {
