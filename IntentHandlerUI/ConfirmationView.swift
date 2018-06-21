@@ -12,5 +12,6 @@ class ConfirmationView: UIView {
     
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var quantity: UILabel!
-
+    @IBOutlet weak var productImageView: UIImageView!
+    
 }

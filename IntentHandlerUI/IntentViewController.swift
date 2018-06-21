@@ -28,8 +28,9 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
         
         if interaction.intentHandlingStatus == .ready {
             view.addSubview(confirmationView)
-            if let intent = interaction.intent as? OrderCoffeeIntent {
-                confirmationView.productName.text = intent.productName
+            if let intent = interaction.intent as? OrderCoffeeIntent, let productName = intent.productName {
+                confirmationView.productName.text = "Qty of \(productName)"
+                confirmationView.productImageView.image = UIImage(named: productName)
                 if let qtyNSNumber = intent.quantity {
                     let qtyInt = Int(truncating: qtyNSNumber)
                     confirmationView.quantity.text = String(qtyInt)
@@ -37,7 +38,7 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
             }
         } else if interaction.intentHandlingStatus == .success {
             view.addSubview(finalizeView)
-            finalizeView.price.text = "10"            
+            finalizeView.price.text = "$10"
         }
         
         completion(true, parameters, self.desiredSize)
