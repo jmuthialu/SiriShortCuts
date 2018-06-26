@@ -166,6 +166,14 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rQ-C9-I2M">
+                                <rect key="frame" x="15" y="617" width="79" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Add to Siri"/>
+                                <connections>
+                                    <action selector="addToSiriTapped:" destination="6cF-6U-zud" eventType="touchUpInside" id="byy-34-0WP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,7 +189,9 @@
                             <constraint firstItem="VYj-MH-ZdB" firstAttribute="leading" secondItem="kLM-8N-rjh" secondAttribute="leading" id="PCy-GZ-Rwe"/>
                             <constraint firstItem="kLM-8N-rjh" firstAttribute="leading" secondItem="jVA-pU-MTf" secondAttribute="trailing" constant="10" id="PUk-Yf-Jfa"/>
                             <constraint firstItem="tyx-4E-L64" firstAttribute="centerY" secondItem="3Zg-Ou-fUc" secondAttribute="centerY" id="VKo-Kl-YSL"/>
+                            <constraint firstItem="JyK-UO-eWj" firstAttribute="bottom" secondItem="6rQ-C9-I2M" secondAttribute="bottom" constant="20" id="WOw-3p-vak"/>
                             <constraint firstItem="3Zg-Ou-fUc" firstAttribute="top" secondItem="JyK-UO-eWj" secondAttribute="top" constant="50" id="Wwb-ku-oLA"/>
+                            <constraint firstItem="6rQ-C9-I2M" firstAttribute="leading" secondItem="JyK-UO-eWj" secondAttribute="leading" constant="15" id="ami-mT-OyD"/>
                             <constraint firstItem="JyK-UO-eWj" firstAttribute="trailing" secondItem="tyx-4E-L64" secondAttribute="trailing" constant="15" id="jJ5-lj-T7G"/>
                             <constraint firstItem="3aU-qG-FbU" firstAttribute="leading" secondItem="jVA-pU-MTf" secondAttribute="leading" id="l6y-AJ-hAb"/>
                             <constraint firstItem="k9W-R0-CNY" firstAttribute="centerX" secondItem="cem-jy-vrh" secondAttribute="centerX" id="vsQ-za-hJv"/>
@@ -190,6 +200,7 @@
                         <viewLayoutGuide key="safeArea" id="JyK-UO-eWj"/>
                     </view>
                     <connections>
+                        <outlet property="addToSiri" destination="6rQ-C9-I2M" id="bx4-Bh-VkK"/>
                         <outlet property="name" destination="tyx-4E-L64" id="KlW-uV-VcC"/>
                         <outlet property="price" destination="kLM-8N-rjh" id="coG-kf-oti"/>
                         <outlet property="quantityTextField" destination="VYj-MH-ZdB" id="dwR-Gh-Ks1"/>

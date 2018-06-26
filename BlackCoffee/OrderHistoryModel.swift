@@ -19,7 +19,13 @@ class OrderModel {
         self.name = name
         self.price = price
         self.quantity = quantity
-        
+    }
+    
+    var orderIntent: OrderCoffeeIntent {
+        let intent = OrderCoffeeIntent()
+        intent.productName = self.name
+        intent.quantity = self.quantity as NSNumber
+        return intent
     }
 }
 
@@ -57,16 +63,13 @@ class OrderHistoryModel {
     }
     
     func donateIntent(orderPlaced: OrderModel?) {
-        guard let orderPlaced = orderPlaced else { return }
-        let intent = OrderCoffeeIntent()
-        intent.productName = orderPlaced.name
-        intent.quantity = orderPlaced.quantity as NSNumber
-        let interaction = INInteraction(intent: intent, response: nil)
+        guard let orderIntent = orderPlaced?.orderIntent else { return }
+        let interaction = INInteraction(intent: orderIntent, response: nil)
         interaction.donate { (error) in
             if let error = error {
                 print("Error donating intent: \(error)")
             } else {
-                print("Donated intent for product name: \(orderPlaced.name)")
+                print("Donated intent for product name: \(orderIntent.productName ?? "No product name")")
             }
         }
         

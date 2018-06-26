@@ -29,6 +29,7 @@
 		B8B7BBF120D0B2DB002E3072 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = B8B7BBF020D0B2DA002E3072 /* readme */; };
 		B8CCB41620D8628800E9B603 /* OrderHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */; };
 		B8CCB41820D8878500E9B603 /* OrderHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */; };
+		B8D2AE4120E1C64700380BEA /* VoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2AE4020E1C64700380BEA /* VoiceManager.swift */; };
 		B8DFA7BF20D8998C002A71BE /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DFA7BE20D8998C002A71BE /* IntentsUI.framework */; };
 		B8DFA7C220D8998C002A71BE /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DFA7C120D8998C002A71BE /* IntentViewController.swift */; };
 		B8DFA7C520D8998C002A71BE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DFA7C320D8998C002A71BE /* MainInterface.storyboard */; };
@@ -88,6 +89,7 @@
 		B8A166C020D0ACFD00C6A814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B7BBF020D0B2DA002E3072 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		B8CCB41520D8628800E9B603 /* OrderHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryModel.swift; sourceTree = "<group>"; };
+		B8D2AE4020E1C64700380BEA /* VoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
 		B8DFA7BC20D8998C002A71BE /* IntentHandlerUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandlerUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DFA7BE20D8998C002A71BE /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		B8DFA7C120D8998C002A71BE /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				B872256D20CF685A00D1816D /* Assets.xcassets */,
 				B872256F20CF685A00D1816D /* LaunchScreen.storyboard */,
 				B872257220CF685A00D1816D /* Info.plist */,
+				B8D2AE4020E1C64700380BEA /* VoiceManager.swift */,
 			);
 			path = BlackCoffee;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				B8777D4420D000CD00D2DEFA /* ProductModel.swift in Sources */,
 				B8777D4220CFFB6C00D2DEFA /* OrderHistoryTVC.swift in Sources */,
 				B8777D4020CFF07E00D2DEFA /* OrderVC.swift in Sources */,
+				B8D2AE4120E1C64700380BEA /* VoiceManager.swift in Sources */,
 				B866877120D749BF00F0B933 /* ProductTVC.swift in Sources */,
 				B80B672120D9E4830007A63A /* OrderHistoryCell.swift in Sources */,
 			);
