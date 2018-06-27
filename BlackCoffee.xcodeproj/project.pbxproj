@@ -157,11 +157,11 @@
 				B80B672020D9E4830007A63A /* OrderHistoryCell.swift */,
 				B8777D3F20CFF07E00D2DEFA /* OrderVC.swift */,
 				B8769F7820D07B14003FC811 /* OrderCoffee.intentdefinition */,
+				B8D2AE4020E1C64700380BEA /* VoiceManager.swift */,
 				B872256A20CF685A00D1816D /* Main.storyboard */,
 				B872256D20CF685A00D1816D /* Assets.xcassets */,
 				B872256F20CF685A00D1816D /* LaunchScreen.storyboard */,
 				B872257220CF685A00D1816D /* Info.plist */,
-				B8D2AE4020E1C64700380BEA /* VoiceManager.swift */,
 			);
 			path = BlackCoffee;
 			sourceTree = "<group>";

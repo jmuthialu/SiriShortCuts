@@ -8,8 +8,7 @@
 
 import Intents
 
-class IntentHandler: INExtension, OrderCoffeeIntentHandling
-{
+class IntentHandler: INExtension, OrderCoffeeIntentHandling {
     
     func confirm(intent: OrderCoffeeIntent, completion: @escaping (OrderCoffeeIntentResponse) -> Void) {
         completion(OrderCoffeeIntentResponse(code: .ready, userActivity: nil))
