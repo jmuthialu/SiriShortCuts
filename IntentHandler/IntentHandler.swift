@@ -10,6 +10,10 @@ import Intents
 
 class IntentHandler: INExtension, OrderCoffeeIntentHandling {
     
+    override func handler(for intent: INIntent) -> Any {
+        return self
+    }
+    
     func confirm(intent: OrderCoffeeIntent, completion: @escaping (OrderCoffeeIntentResponse) -> Void) {
         completion(OrderCoffeeIntentResponse(code: .ready, userActivity: nil))
     }
@@ -18,12 +22,8 @@ class IntentHandler: INExtension, OrderCoffeeIntentHandling {
         let orderModel = OrderHistoryModel()
         if let productName = intent.productName {
             orderModel.addOrder(fromIntent: intent)
-            completion(OrderCoffeeIntentResponse.success(productName: productName, waitTime: "10"))
+            completion(OrderCoffeeIntentResponse.success(productName: productName, waitTime: "2"))
         }
-    }
-    
-    override func handler(for intent: INIntent) -> Any {
-        return self
     }
 
 }

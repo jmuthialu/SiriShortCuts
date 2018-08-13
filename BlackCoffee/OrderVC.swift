@@ -29,11 +29,11 @@ class OrderVC: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        if let productSelected = productSelected { // order creation
+        if let productSelected = productSelected { // order creation from ProductModel
             name.text = productSelected.name
             price.text = String(productSelected.price)
             addToSiri.isHidden = true
-        } else if let productOrdered = productOrdered { // display order
+        } else if let productOrdered = productOrdered { // display order from OrderHistoryTVC
             name.text = productOrdered.name
             price.text = String(productOrdered.price)
             quantityTextField.text = String(productOrdered.quantity)

@@ -2,6 +2,7 @@ readme
 ------
 
 Usage: Order tea using black coffee
+Shortcut: coffee
 
 App development
 
@@ -9,15 +10,14 @@ App development
 - Add Siri Permission working in info.plis
 - Add permission check in App Delegate
 
-- Create intent definition file
-- Donate intent
+- Create intent definition file with parameters (OrderCoffee.intentdefinition)
+- Donate intent when placing order
 - handle intents in continue userActivity in AppDelegate
 
 - Add IntentHandler target
 - Add this target to OrderCoffee.intentdefinition file so that IntentHandler can compile OrderCoffeeIntentHandling
 - Add Intent handler for OrderCoffeeIntentHandling
-- Add custom intent in info.plist of intentHandler (IntentsSupported: OrderCoffeeIntentHandling)
-
+- Add this intent in info.plist of intentHandler (IntentsSupported: OrderCoffeeIntentHandling)
 
 - Add IntentHandlerUI target
 - Add custom intent in info.plist of intentHandlerUI (IntentsSupported: OrderCoffeeIntentHandling)

@@ -7,9 +7,9 @@
 	<key>INIntentDefinitionModelVersion</key>
 	<string>1.0</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>17F77</string>
+	<string>17G65</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>10L176w</string>
+	<string>10L221o</string>
 	<key>INIntentDefinitionToolsVersion</key>
 	<string>10.0</string>
 	<key>INIntents</key>
@@ -22,7 +22,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>gGxx5e</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>INIntentName</key>
 			<string>OrderCoffee</string>
 			<key>INIntentParameterCombinations</key>
@@ -141,7 +141,7 @@
 				</array>
 			</dict>
 			<key>INIntentRestrictions</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>INIntentTitle</key>
 			<string>Order Coffee</string>
 			<key>INIntentTitleID</key>
