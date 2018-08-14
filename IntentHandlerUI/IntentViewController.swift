@@ -26,7 +26,7 @@ class IntentViewController: UIViewController, INUIHostedViewControlling, INUIHos
             view.removeFromSuperview()
         }
 
-        if interaction.intentHandlingStatus == .unspecified { // from siri. This is not correct way to handle
+        if interaction.intentHandlingStatus == .unspecified { // from siri
             view.addSubview(confirmationView)
             if let intent = interaction.intent as? OrderCoffeeIntent, let productName = intent.productName {
                 confirmationView.productName.text = "Qty of \(productName)" // Unspecified
